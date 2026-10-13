@@ -4,6 +4,7 @@ package hcpopenshiftclusters
 // Licensed under the MIT License. See NOTICE.txt in the project root for license information.
 
 type HcpOpenShiftClusterPropertiesUpdate struct {
+	Api                     *ApiProfileUpdate          `json:"api,omitempty"`
 	Autoscaling             *ClusterAutoscalingProfile `json:"autoscaling,omitempty"`
 	Etcd                    *EtcdProfileUpdate         `json:"etcd,omitempty"`
 	ImageDigestMirrors      *[]ImageDigestMirror       `json:"imageDigestMirrors,omitempty"`
